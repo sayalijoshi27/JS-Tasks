@@ -1,0 +1,9 @@
+1. Object Basics 
+2. Creating object 
+6. Classes in JavaScript 
+3. Functions as properties of objects
+4. Spread and Destructuring operations 
+5. Creating copies of objects 
+
+
+Generating skeleton for an object
