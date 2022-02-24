@@ -7,3 +7,9 @@
 
 
 Generating skeleton for an object
+
+// read 
+Syntactic Sugar 
+Destructuring
+Spread Operation 
+Classes in JavaScript
