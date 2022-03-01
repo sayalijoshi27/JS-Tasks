@@ -20,7 +20,6 @@ class Employee {
   const emp = new Employee("Sayali", "Contentstack");
 
   function copyObject (obj) {
-      console.log('Object copied', obj)
       const objCopy = {
         ...obj,
         address: {
