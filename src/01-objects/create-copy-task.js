@@ -1,25 +1,25 @@
-class Employee {
-    constructor(name, company) {
-      this.name = name;
-      this.company = company;
-      this.address = {
-        street: "some street",
-        pin: "401011",
-        location: {
-            state: "Maharashtra",
-            city: "Virar"
-        }
-      };
-    }
-    // class method
-    printName() {
-      console.log("Welcome", this.name);
-    }
-  }
+// class Employee {
+//     constructor(name, company) {
+//       this.name = name;
+//       this.company = company;
+//       this.address = {
+//         street: "some street",
+//         pin: "401011",
+//         location: {
+//             state: "Maharashtra",
+//             city: "Virar"
+//         }
+//       };
+//     }
+//     // class method
+//     printName() {
+//       console.log("Welcome", this.name);
+//     }
+//   }
 
-  const emp = new Employee("Sayali", "Contentstack");
+//   const emp = new Employee("Sayali", "Contentstack");
 
-  function copyObject (obj) {
+  function createCopy (obj) {
       const objCopy = {
         ...obj,
         address: {
@@ -32,8 +32,24 @@ class Employee {
       return objCopy
   }
 
-  let clonedObj = copyObject(emp);
-  console.log("copy of an object output", {input: emp, output: clonedObj})
+  // let clonedObj = copyObject(emp);
+  // console.log("copy of an object output", {input: emp, output: clonedObj})
+
+  const obj = {
+    name: "Sayali",
+    company: "Contentstack",
+    address: {
+      street: "some street",
+        pin: "401011",
+        location: {
+            state: "Maharashtra",
+            city: "Virar"
+        }
+    }
+  }
+
+  let objectCopy = createCopy(obj)
+  console.log("Create Copy Output", { input: obj, output: objectCopy });
 
   const sayaliStatus = [
     {

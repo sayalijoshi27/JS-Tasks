@@ -13,20 +13,22 @@ const employee = {
     ],
   };
 
-  const getSkeleton = (employee) => {
-    console.log(employee)
-    let skeleton = {}
+  const getSkeleton = (employee, structure = {}) => {
     Object.keys(employee).forEach((key) => {
-      skeleton[`${key}`] = employee[`${key}`].constructor.name
-      console.log('get skeleton', key, skeleton[`${key}`], skeleton)
-      if (skeleton[`${key}`]  === 'Array') {
-        console.log('inside if')
-        getSkeleton(skeleton[`${key}`])
-      } else if (skeleton[`${key}`]  === "Object") {
-        console.log('inside else if')
+      if (employee[`${key}`].constructor.name  === 'Object') {
+        structure[`${key}`] = {}
+        getSkeleton(employee[`${key}`], structure[`${key}`])
+      } else if (employee[`${key}`].constructor.name  === 'Array') {        
+        structure[`${key}`] = employee[`${key}`].map((ele) => {
+          return getSkeleton(ele)
+        })
+      } else {
+        structure[`${key}`] = employee[`${key}`].constructor.name
       }
     })
-    return skeleton
+    return structure
   }
-
-  let skeleton = getSkeleton(employee)
+  let structure = {}
+  let skeleton = getSkeleton(employee, structure)
+ 
+  console.log("Output", { input: employee, output: skeleton });
