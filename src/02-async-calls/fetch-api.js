@@ -25,9 +25,9 @@ fetch(url)
           <address>
             <p>${street}, ${suite}</p>
             <p>${city}, ${zipcode}</p>
-          </address>
-          <p>${phone}</p>
-          <p><a href=${email} target="_blank">${email}</a></p>          
+          </address>          
+          <p><a href=${email} target="_blank">${email}</a></p>
+          <p>${phone}</p>          
           <p><a href=${website} target="_blank">${website}</a></p>
         </div>
       </li>`;
