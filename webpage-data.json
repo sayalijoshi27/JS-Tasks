@@ -34,5 +34,9 @@
     "cta": "Contact Us",
     "href": "#",
     "bannerImage": "https://niravkpatel28.github.io/github-image-repository/webpage/banner2.png"
+  },
+  "hamburger": {
+    "menuIcon": "https://niravkpatel28.github.io/github-image-repository/webpage/menu-black.png",
+    "closeIcon": "https://niravkpatel28.github.io/github-image-repository/webpage/close.png"
   }
 }
