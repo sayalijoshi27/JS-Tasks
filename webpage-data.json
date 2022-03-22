@@ -4,6 +4,16 @@
       "imgSrc": "https://niravkpatel28.github.io/github-image-repository/webpage/surfboard-logo.png",
       "alt": "Surfboard India Company Logo"
     },
+    "hamburger": {
+      "menuOpen": {
+        "menuIcon": "https://niravkpatel28.github.io/github-image-repository/webpage/menu-black.png",
+        "alt": "Open Menu"
+      },
+      "close": {
+        "closeIcon": "https://niravkpatel28.github.io/github-image-repository/webpage/close.png",
+        "alt": "Close"
+      }      
+    },
     "navLinks": [
       {
         "linkId": "li1",
@@ -34,9 +44,5 @@
     "cta": "Contact Us",
     "href": "#",
     "bannerImage": "https://niravkpatel28.github.io/github-image-repository/webpage/banner2.png"
-  },
-  "hamburger": {
-    "menuIcon": "https://niravkpatel28.github.io/github-image-repository/webpage/menu-black.png",
-    "closeIcon": "https://niravkpatel28.github.io/github-image-repository/webpage/close.png"
   }
 }
